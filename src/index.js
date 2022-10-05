@@ -11,6 +11,7 @@ root.render(
   <Router>
     <Header/>
     <Routes>
+    <Lpageblog/>
     <Route path='/blog' element={<Lpageblog/>}/>
     </Routes>
   </Router>
