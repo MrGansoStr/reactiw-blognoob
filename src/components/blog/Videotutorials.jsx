@@ -4,7 +4,7 @@ export const Videotutorials = () => {
     <>
     <div className="container-xl">
       <ReactPlayer url={'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
-      width="100%" height="35%" controls/>
+      width="100%" controls/>
     </div>
     </>
   )

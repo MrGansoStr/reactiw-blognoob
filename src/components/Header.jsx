@@ -14,15 +14,15 @@ export const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li className="nav-item font-weight-bold">
-                  <a className="nav-link active text-black font-weight-bold" aria-current="page" href="/"><b>Home</b></a>
+                <li className="nav-item">
+                  <a className="nav-link" aria-current="page" href="/">Home</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/blog">Blog</a>
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Temas
+                    Otros Temas
                   </a>
 
                   <ul className="dropdown-menu">
@@ -34,6 +34,9 @@ export const Header = () => {
                 </li>
                 <li className="nav-item ">
                   <a className="nav-link" href="/">Calculadora Estadistica</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/">About Me</a>
                 </li>
               </ul>
               <form className="d-flex" role="search">
