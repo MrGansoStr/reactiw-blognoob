@@ -18,6 +18,6 @@
   background-color: white !important;
 }
 
-#listabug li a:hover {
+.listabug li a:hover {
   background-color: rgba(83, 93, 102, 0.384) !important;
 }

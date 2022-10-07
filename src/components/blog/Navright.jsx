@@ -11,12 +11,13 @@ export const Navright = () => {
               <h1 style={{padding: "15px"}}> <strong> C++ </strong> </h1>
               <hr/>
               <ul className="text-left border border-top-0 border-bottom-0" style={{ padding: "40px"}}>
-                <a className="list-group-item list-group-item-action" href="/blog/tiposvariables">Tipos de Variables</a>
+                <a className="list-group-item" href="/blog">Introduccion</a>
+                <a className="list-group-item" href="/blog/tiposvariables">Tipos de Variables</a>
                 <a className="list-group-item" href="/blog/funciones">Funciones</a>
                 <a className="list-group-item" href="/blog/parametrosvalorreferencia">Parametros por valor y referencia</a>
                 <a className="list-group-item" href="/blog/operadores">Operadores</a>
-                <a className="list-group-item" href="/">Sentencias <b>if else</b></a>
-                <a className="list-group-item" href="/">Bucles</a>
+                <a className="list-group-item" href="/blog/ifelse">Sentencias <b>if else</b></a>
+                <a className="list-group-item" href="/blog/bucles">Bucles</a>
                 <a className="list-group-item" href="/">Switch</a>
                 <a className="list-group-item" href="/">Sentencias de salto</a>
                 <a className="list-group-item" href="/">Librerias Estándar</a>

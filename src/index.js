@@ -11,21 +11,27 @@ import { Operators } from './components/blog/Partes/Operators/Operators'
 import { Parameters } from './components/blog/Partes/Parameters/Parameters';
 import { Functions } from './components/blog/Partes/Functions/Functions'
 import { Verpdf } from './components/blog/PDF/Verpdf'
+import { Setencesifelse } from './components/blog/Partes/Sentencesifelse/Sentencesifelse';
+import { Loops } from './components/blog/Partes/Loops/Loops';
+import { Lpage } from './components/Lpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Header/>
+    <Header />
     <Routes>
-      <Route path='/blog' element={<Lpageblog/>}/>
-      <Route path='/blog/tiposvariables' element={<TypesVariables/>}/>
-      <Route path='/blog/parametrosvalorreferencia' element={<Parameters/>}/>
-      <Route path='/blog/operadores' element={<Operators/>}/>
-      <Route path='/blog/funciones' element={<Functions/>}/>
-      <Route path='/blog/pfds' element={<Verpdf/>}/>
+      <Route index element={<Lpage/>}/>
+      <Route path='/blog' element={<Lpageblog />} />
+      <Route path='/blog/tiposvariables' element={<TypesVariables />} />
+      <Route path='/blog/parametrosvalorreferencia' element={<Parameters />} />
+      <Route path='/blog/operadores' element={<Operators />} />
+      <Route path='/blog/funciones' element={<Functions />} />
+      <Route path='/blog/pfds' element={<Verpdf />} />
+      <Route path='/blog/ifelse' element={<Setencesifelse />} />
+      <Route path='/blog/bucles' element={<Loops />} />
     </Routes>
-    <Footgeneral/>
+    <Footgeneral />
   </Router>
 );
 
