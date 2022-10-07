@@ -3,10 +3,12 @@ import operatorsrelimg from './img/operatorsrelimg.JPG'
 import operatorssameimg from './img/operatorssameimg.JPG'
 import { Carouseloperators1 } from './Carouseloperators1'
 import { Carouseloperators2 } from './Carouseloperators2'
+import { Navright } from '../../Navright'
 
 export const Operators = () => {
 	return (
 		<div className="container-xl">
+			<Navright/>
 			<br/>
 			<h2>Operadores </h2>
 			<p>

@@ -1,7 +1,9 @@
 import parametersimg from './img/parametersimg.png'
+import { Navright } from '../../Navright'
 export const Parameters = () => {
   return (
     <div className="container-xl">
+      <Navright/>
       <h2>
         Funciones con Parametros por Referencia y por valor
       </h2>

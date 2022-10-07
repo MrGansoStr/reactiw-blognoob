@@ -1,7 +1,9 @@
 import functionsimg from './img/functionsimg.png'
+import { Navright } from '../../Navright'
 export const Functions = () => {
   return (
     <div className="container-xl">
+      <Navright/>
       <br/>
       <h2>Funciones</h2>
       <p>Las funciones son un conjunto de instrucciones que realizan una tarea especififica. En genreal toman unos valores de entrada, llamados parametros y proporcionan un valor de salida o valor de retorno; aunque tanto unos como el otro pueden no existir.
