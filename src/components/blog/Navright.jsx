@@ -2,19 +2,19 @@ import { MdMenu } from "react-icons/md"
 export const Navright = () => {
   return (
     <>
-      <div className="text-white">
-        <nav class="navbar-expand-md">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style={{ width: "90%", alignItems: "center", fontSize: "22px"}}>
+      <div className="text-white align-items-center justify-content-center" style={{paddingBottom: "15px", paddingTop: "15px"}}>
+        <nav className="navbar-expand-md">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style={{ width: "90%", alignItems: "center", fontSize: "22px"}}>
               Temas <MdMenu size={50}/>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <h3> <strong> C++ </strong> </h3>
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <h1 style={{padding: "15px"}}> <strong> C++ </strong> </h1>
               <hr/>
-              <ul className="text-left" style={{ paddingLeft: "5px", paddingTop: "20px"}}>
+              <ul className="text-left border border-top-0 border-bottom-0" style={{ padding: "40px"}}>
                 <a className="list-group-item list-group-item-action" href="/blog/tiposvariables">Tipos de Variables</a>
-                <a className="list-group-item" href="/blog">Funciones</a>
-                <a className="list-group-item" href="/">Parametros por valor y referencia</a>
-                <a className="list-group-item" href="/blog">Operadores</a>
+                <a className="list-group-item" href="/blog/funciones">Funciones</a>
+                <a className="list-group-item" href="/blog/parametrosvalorreferencia">Parametros por valor y referencia</a>
+                <a className="list-group-item" href="/blog/operadores">Operadores</a>
                 <a className="list-group-item" href="/">Sentencias <b>if else</b></a>
                 <a className="list-group-item" href="/">Bucles</a>
                 <a className="list-group-item" href="/">Switch</a>
@@ -31,13 +31,11 @@ export const Navright = () => {
                 <a className="list-group-item" href="/">Funciones y Métodos virtuales</a>
               </ul>
               <hr />
-              <ul className="text-left" style={{ listStyle: "none", paddingLeft: "3px" }}>
+              <ul className="text-left" style={{ listStyle: "none", padding: "15px" }}>
                 Videos:
                 <a className="list-group-item" href="/blog">Otro link</a>
               </ul>
             </div>
-          <div class="">
-          </div>
         </nav>
       </div>
     </>

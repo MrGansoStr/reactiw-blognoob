@@ -4,12 +4,16 @@ import intimg from './img/intimg.png'
 import boolimg from './img/boolimg.png'
 import doubleimg from './img/doubleimg.png'
 import voidimg from './img/voidimg.png'
+import { Navright } from '../../Navright'
 export const TypesVariables = () => {
   return (
     <div className="container-xl">
-      <div className="text-dark">
+      <br/>
+      <Navright/>
+      <div className="">
         <hr />
         <h2>Tipos de Variables</h2>
+        <hr/>
         <h3>Tipos Fundamentales</h3>
         <p>En C solo existen cinco tipos fundamentales y los tipos enumerados, C++ añade un septimo tipo, el bool, y el resto de los tipos son derivados de ellos. Los veremos uno por uno, y veremos cómo les afectan cada uno de los modificadores.
         </p>

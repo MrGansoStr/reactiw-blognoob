@@ -7,3 +7,9 @@
 * header {
   font-weight: bold;
 }
+#navbarSupportedContent ul li a {
+  color: white !important;
+}
+#btnnavigation {
+  background-color: white !important;
+}
