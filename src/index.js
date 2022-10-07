@@ -14,7 +14,7 @@ import { Verpdf } from './components/blog/PDF/Verpdf'
 import { Setencesifelse } from './components/blog/Partes/Sentencesifelse/Sentencesifelse';
 import { Loops } from './components/blog/Partes/Loops/Loops';
 import { Lpage } from './components/Lpage';
-
+import { Mtcgeneral } from './components/calc/MTC/Mtcgeneral';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +30,7 @@ root.render(
       <Route path='/blog/pfds' element={<Verpdf />} />
       <Route path='/blog/ifelse' element={<Setencesifelse />} />
       <Route path='/blog/bucles' element={<Loops />} />
+      <Route path='/mtc' element={<Mtcgeneral/>}/>
     </Routes>
     <Footgeneral />
   </Router>

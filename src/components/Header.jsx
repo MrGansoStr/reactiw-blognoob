@@ -35,7 +35,7 @@ export const Header = () => {
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calculadora Estadistica</a>
                   <ul className="dropdown-menu listabug" style={{ backgroundColor: "rgba(43, 49, 54, 0.384)" }}>
-                    <li><a className="dropdown-item" href="/">Medidas de Tendencia Central</a></li>
+                    <li><a className="dropdown-item" href="/mtc">Medidas de Tendencia Central</a></li>
                     <li><a className="dropdown-item disabled" href="/">Varianza</a></li>
                     <li><a className="dropdown-item disabled" href="/">Varianza</a></li>
                   </ul>
