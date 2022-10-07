@@ -10,6 +10,7 @@ import { TypesVariables } from './components/blog/Partes/TypesVariables/TypesVar
 import { Operators } from './components/blog/Partes/Operators/Operators'
 import { Parameters } from './components/blog/Partes/Parameters/Parameters';
 import { Functions } from './components/blog/Partes/Functions/Functions'
+import { Verpdf } from './components/blog/PDF/Verpdf'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
       <Route path='/blog/parametrosvalorreferencia' element={<Parameters/>}/>
       <Route path='/blog/operadores' element={<Operators/>}/>
       <Route path='/blog/funciones' element={<Functions/>}/>
+      <Route path='/blog/pfds' element={<Verpdf/>}/>
     </Routes>
     <Footgeneral/>
   </Router>

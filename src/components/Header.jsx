@@ -25,7 +25,7 @@ export const Header = () => {
                     Otros Temas
                   </a>
 
-                  <ul className="dropdown-menu">
+                  <ul id="listabug" className="dropdown-menu" style={{backgroundColor: "rgba(43, 49, 54, 0.384)"}}>
                     <li><a className="dropdown-item" href="/">Estadistica Basica</a></li>
                     <li><a className="dropdown-item" href="/">Programación</a></li>
                     <li><hr className="dropdown-divider" /></li>

@@ -30,6 +30,12 @@ export const Navright = () => {
                 <a className="list-group-item" href="/">Herencia</a>
                 <a className="list-group-item" href="/">Funciones y Métodos virtuales</a>
               </ul>
+              <hr/>
+              <ul className="text-left" style={{ listStyle: "none", padding: "15px" }}>
+                <h2>PDFs</h2>
+                <hr/>
+                <a className="list-group-item"  href="/blog/pdfs">Proyecto</a>
+              </ul>
               <hr />
               <ul className="text-left" style={{ listStyle: "none", padding: "15px" }}>
                 Videos:
