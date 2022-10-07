@@ -38,9 +38,11 @@ export const Operators = () => {
 			<hr />
 			<h3>Operadores de asignacion</h3>
 			<p>Existen varios operadores de asignacion, el mas evidente y el mas usado es el "=", pero no es el unico.</p>
+			<img src={operatorsasignimg} className="d-block w-35 rounded-4 justify-content-center align-items-center" style={{margin: "0 auto"}} alt="Operadores de asignacion" />
 			<hr />
 			<h3>Operadores de Igualdad</h3>
 			<p>Los operadores de igualdad son "==", (dos signos = seguidos) y "!=", que comprueban la igualdad o desigualdad entre dos valores aritmeticos.</p>
+			<img src={operatorssameimg} className="d-block w-35 rounded-4 justify-content-center align-items-center" style={{margin: "0 auto"}} alt="Operadores de igualdad" />
 			<hr />
 			<div>
 
