@@ -2,7 +2,7 @@ import ContentLoader from 'react-content-loader'
 
 const Fallback = (props) => {
   return (
-    <>
+    <div className="h-100 w-100">
       <ContentLoader
         speed={1}
         width={400}
@@ -18,7 +18,7 @@ const Fallback = (props) => {
         <rect x="31" y="98" rx="0" ry="0" width="215" height="5" />
         <rect x="35" y="53" rx="0" ry="0" width="208" height="18" />
       </ContentLoader>
-    </>
+    </div>
   )
 }
 export default Fallback;

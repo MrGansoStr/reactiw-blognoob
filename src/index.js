@@ -38,9 +38,10 @@ const Fallback = lazy(() => import('./components/Fallback'))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Suspense fallback={<Fallback/>}>
+    <Suspense  fallback={<Fallback/>}>
       <Router>
         <Header />
+        <Suspense fallback={<Fallback/>}>
         <Routes>
           <Route index element={<Lpage />} />
           <Route path='/blog' element={<Lpageblog />} />
@@ -54,6 +55,7 @@ root.render(
           <Route path='/mtc' element={<Mtcgeneral />} />
           <Route path='/varianza' element={<Varianza />} />
         </Routes>
+        </Suspense>
         <Footgeneral />
       </Router>
     </Suspense>
