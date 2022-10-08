@@ -15,6 +15,7 @@ import { Setencesifelse } from './components/blog/Partes/Sentencesifelse/Sentenc
 import { Loops } from './components/blog/Partes/Loops/Loops';
 import { Lpage } from './components/Lpage';
 import { Mtcgeneral } from './components/calc/MTC/Mtcgeneral';
+import { Varianza } from './components/calc/Varianza/Varianza';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,6 +32,7 @@ root.render(
       <Route path='/blog/ifelse' element={<Setencesifelse />} />
       <Route path='/blog/bucles' element={<Loops />} />
       <Route path='/mtc' element={<Mtcgeneral/>}/>
+      <Route path='/varianza' element={<Varianza/>}/>
     </Routes>
     <Footgeneral />
   </Router>
