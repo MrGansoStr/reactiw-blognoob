@@ -5,7 +5,8 @@ import { Videotutorials } from './Videotutorials'
 import { ContentMain } from './Partes/ContentMain'
 import { Navright } from '../blog/Navright'
 import { Comments } from '../blog/Comments'
-export const Lpageblog = () => {
+
+const Lpageblog = () => {
 	return (
 		<>
 			<br />
@@ -31,3 +32,5 @@ export const Lpageblog = () => {
 		</>
 	)
 }
+
+export default Lpageblog;

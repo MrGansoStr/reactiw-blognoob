@@ -1,6 +1,6 @@
 import Fimg from '../img/finesiimg.jpg'
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
       <header className="container-xxl" >
@@ -55,3 +55,4 @@ export const Header = () => {
     </>
   )
 }
+export default Header;

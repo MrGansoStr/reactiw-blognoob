@@ -1,6 +1,6 @@
 import functionsimg from './img/functionsimg.png'
 import { Navright } from '../../Navright'
-export const Functions = () => {
+const Functions = () => {
   return (
     <div className="container-xl">
       <Navright/>
@@ -28,3 +28,5 @@ export const Functions = () => {
     </div>
   )
 }
+
+export default Functions;

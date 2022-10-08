@@ -1,7 +1,7 @@
 import Fimg from '../img/finesiimg.jpg'
 import { RiTwitterLine, RiFacebookLine, RiInstagramLine } from "react-icons/ri";
 
-export const Footgeneral = () => {
+const Footgeneral = () => {
 	return (
 		<footer className="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" style={{bottom: "0 !important", height: "95%"}}>
     <div className="col-md-4 d-flex align-items-center">
@@ -18,3 +18,5 @@ export const Footgeneral = () => {
   </footer>
 	)
 }
+
+export default Footgeneral;

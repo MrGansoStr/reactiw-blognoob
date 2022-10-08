@@ -1,5 +1,5 @@
 import { Carousellpage } from './Carousellpage'
-export const Lpage = () => {
+const Lpage = () => {
 
   return (
     <div className="container-md">
@@ -13,3 +13,5 @@ export const Lpage = () => {
     </div>
   )
 }
+
+export default Lpage;

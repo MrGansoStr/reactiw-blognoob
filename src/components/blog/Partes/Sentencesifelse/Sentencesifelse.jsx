@@ -1,7 +1,7 @@
 import ifelseimg from './img/ifelseimg.png'
 import { Navright } from '../../Navright'
 
-export const Setencesifelse = () => {
+const Sentencesifelse = () => {
 	return (
 		<div className="container-xl">
 			<br />
@@ -23,3 +23,5 @@ export const Setencesifelse = () => {
 		</div>
 	)
 }
+
+export default Sentencesifelse;

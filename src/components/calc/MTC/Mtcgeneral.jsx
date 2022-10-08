@@ -5,7 +5,7 @@ import Box from '@mui/joy/Box';
 import FormLabel from '@mui/joy/FormLabel';
 import { calcMediana1, calcmedia1, cmoda1} from './calculating/mtcformulas'
 
-export const Mtcgeneral = () => {
+const Mtcgeneral = () => {
 	let [dat, setdat] = useState("")
 	let [media, setmedia] = useState(0)
 	let [mediana, setmediana] = useState(0)
@@ -73,3 +73,5 @@ export const Mtcgeneral = () => {
 		</div>
 	)
 }
+
+export default Mtcgeneral;

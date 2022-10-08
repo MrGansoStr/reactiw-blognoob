@@ -2,7 +2,7 @@ import dowhileimg from './img/dowhileimg.png'
 import whileimg from './img/whileimg.png'
 import forimg from './img/forimg.png'
 
-export const Loops = () => {
+const Loops = () => {
   return (
     <div className="container-lg">
       <br />
@@ -40,3 +40,5 @@ export const Loops = () => {
     </div>
   )
 }
+
+export default Loops;

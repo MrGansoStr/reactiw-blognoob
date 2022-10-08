@@ -5,7 +5,7 @@ import { Carouseloperators1 } from './Carouseloperators1'
 import { Carouseloperators2 } from './Carouseloperators2'
 import { Navright } from '../../Navright'
 
-export const Operators = () => {
+const Operators = () => {
 	return (
 		<div className="container-xl">
 			<Navright/>
@@ -62,3 +62,5 @@ export const Operators = () => {
 		</div>
 	)
 }
+
+export default Operators;

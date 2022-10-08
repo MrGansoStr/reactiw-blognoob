@@ -5,7 +5,7 @@ import Box from '@mui/joy/Box';
 import FormLabel from '@mui/joy/FormLabel';
 import { calcvarm, calcvarp } from './calculating/varianzacalc';
 
-export const Varianza = () => {
+const Varianza = () => {
   let [dat, setdat] = useState("")
   let [varm, setvarm] = useState(0)
   let [varp, setvarp] = useState(0)
@@ -67,3 +67,5 @@ export const Varianza = () => {
 		</div>
   )
 }
+
+export default Varianza;

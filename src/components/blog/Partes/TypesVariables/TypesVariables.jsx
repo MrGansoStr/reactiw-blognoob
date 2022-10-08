@@ -5,7 +5,8 @@ import boolimg from './img/boolimg.png'
 import doubleimg from './img/doubleimg.png'
 import voidimg from './img/voidimg.png'
 import { Navright } from '../../Navright'
-export const TypesVariables = () => {
+
+const TypesVariables = () => {
   return (
     <div className="container-xl">
       <br/>
@@ -66,3 +67,5 @@ export const TypesVariables = () => {
     </div>
   )
 }
+
+export default TypesVariables;

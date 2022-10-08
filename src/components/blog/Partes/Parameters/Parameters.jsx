@@ -1,6 +1,6 @@
 import parametersimg from './img/parametersimg.png'
 import { Navright } from '../../Navright'
-export const Parameters = () => {
+const Parameters = () => {
   return (
     <div className="container-xl">
       <Navright/>
@@ -19,3 +19,5 @@ export const Parameters = () => {
     </div>
   )
 }
+
+export default Parameters;
