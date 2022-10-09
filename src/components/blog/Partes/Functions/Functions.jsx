@@ -9,7 +9,7 @@ const Functions = () => {
       <br/>
       <div className="rounded-3 border p-3"> 
       <br/>
-      <h2>Funciones</h2>
+      <h3 id="funciones" className="titulo">Funciones</h3>
       <p>Las funciones son un conjunto de instrucciones que realizan una tarea especififica. En genreal toman unos valores de entrada, llamados parametros y proporcionan un valor de salida o valor de retorno; aunque tanto unos como el otro pueden no existir.
       </p>
       <p>

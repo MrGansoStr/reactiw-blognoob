@@ -7,9 +7,9 @@ const Parameters = () => {
       <br/>
       <Navright con={true}/>
       <div className="rounded-3 border p-3">
-        <h2>
+        <h3 id="referenciayvalor" className="titulo">
           Funciones con Parametros por Referencia y por valor
-        </h2>
+        </h3>
         <p>
           Hasta ahora siempre hemos declarado los parámetros de nuestras funciones del mismo modo. Sin embargo, éste no es el único modo que existe para pasar parámetros.
         </p>

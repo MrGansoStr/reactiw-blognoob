@@ -24,7 +24,7 @@ const Operators = () => {
 				</p>
 
 				<hr />
-				<h3>Operadores Aritmeticos</h3>
+				<h3 id="operadoresaritmeticos" className="titulo">Operadores Aritmeticos</h3>
 				<p>variable1 + variable2 <b>Suma</b></p>
 				<p>variable1 - variable2 <b>Resta</b></p>
 				<p>Asignan valores positivos o negativos a la expresión a la que se aplican.</p>
@@ -34,28 +34,28 @@ const Operators = () => {
 				<p>variable1 % variable2 <b>Residuo</b></p>
 				<Carouseloperators2 />
 				<hr />
-				<h3>Incremento y Decremento</h3>
+				<h3 id="incrementoydecremento" className="titulo">Incremento y Decremento</h3>
 				<p>variable1++ <b>Post - Incremento</b></p>
 				<p>++variable1 <b>Pre - Incremento</b></p>
 				<p>variable1-- <b>Post - Decremento</b></p>
 				<p>--variable1 <b>Pre - Decremento</b></p>
 				<hr />
-				<h3>Operadores de asignacion</h3>
+				<h3 id="asignacion" className="titulo">Operadores de asignacion</h3>
 				<p>Existen varios operadores de asignacion, el mas evidente y el mas usado es el "=", pero no es el unico.</p>
 				<img src={operatorsasignimg} className="d-block w-35 rounded-4 justify-content-center align-items-center" style={{ margin: "0 auto" }} alt="Operadores de asignacion" />
 				<hr />
-				<h3>Operadores de Igualdad</h3>
+				<h3 id="igualdad" className="titulo">Operadores de Igualdad</h3>
 				<p>Los operadores de igualdad son "==", (dos signos = seguidos) y "!=", que comprueban la igualdad o desigualdad entre dos valores aritmeticos.</p>
 				<img src={operatorssameimg} className="d-block w-35 rounded-4 justify-content-center align-items-center" style={{ margin: "0 auto" }} alt="Operadores de igualdad" />
 				<hr />
 				<div>
 
-					<h3>Operadores Logicos</h3>
+					<h3 id="logicos" className="titulo">Operadores Logicos</h3>
 					<p>Los operadores "&amp;&amp;", "||" y "!" relacionan expresiones logicas, formando a su vez nuevas expresiones logicas.</p>
 					<Carouseloperators1 />
 				</div>
 				<hr />
-				<h3>Operadores relacionales</h3>
+				<h3 id="relacionales" className="titulo">Operadores relacionales</h3>
 				<p>Los operadores son:</p>
 				<img src={operatorsrelimg} className="d-block w-35 rounded-4 justify-content-center align-items-center" style={{ margin: "0 auto" }} alt="Operadores relacionales" />
 				<hr />

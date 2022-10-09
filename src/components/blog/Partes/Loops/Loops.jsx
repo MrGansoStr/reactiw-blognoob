@@ -14,7 +14,7 @@ const Loops = () => {
       <h2>Bucles</h2>
       <p>Estos tipos de sentencias son el núcleo de cualquier lenguaje de programación, y están presentes en la mayor parte de ellos. Nos permiten realizar tareas repetitivas, y se usan en la resolución de la mayor parte de los problemas</p>
       <hr />
-      <h3>Bucles "while"</h3>
+      <h3 id="while" className="titulo">Bucles "while"</h3>
       <p>
         Es la sentencia de bucle más sencilla, y sin embargo es tremendamente potente. La sintaxis es la siguiente:
         While (condicion) sentencia
@@ -25,7 +25,7 @@ const Loops = () => {
       <hr />
       <img className="img-fluid h-auto d-flex justify-content-center rounded-4" src={whileimg} alt="If Else" style={{ width: "70%", margin: "0 auto" }} />
       <hr />
-      <h3>Bucles "do while"</h3>
+      <h3 id="dowhile" className="titulo">Bucles "do while"</h3>
       <p>Esta sentencia va un paso más allá que el "while". La sintaxis es la siguiente</p>
       <p>do (sentencia) while (condicion)</p>
       <p>
@@ -34,7 +34,7 @@ const Loops = () => {
       <hr />
       <img className="img-fluid h-auto d-flex justify-content-center rounded-4" src={dowhileimg} alt="If Else" style={{ width: "70%", margin: "0 auto" }} />
       <hr />
-      <h3>Bucle "for"</h3>
+      <h3 id="for" className="titulo">Bucle "for"</h3>
       <p>for( inicializacion; condicion; incremento ) sentencia</p>
       <p>
         Antes de la primera iteración se ejecutará la inicialización del bucle, que puede ser una expresión o una declaración. En este apartado se iniciarán las variables usadas en el bucle. Estas variables pueden ser declaradas en este punto, pero tendrán validez sólo dentro del bucle "for". Después de cada iteración se ejecutará el incremento de las variables del bucle.

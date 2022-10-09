@@ -16,7 +16,7 @@ const Sentencesifelse = () => {
 				El "else es opcional, y no pueden insertarse sentencias entre la sentencia1 y el "else".
 			</p>
 			<hr />
-			<h3>If anidados</h3>
+			<h3 id="ifanidados" className="titulo">If anidados</h3>
 			<p className='p-3'>Los if pueden ir dentro de otro if y también dentro de un else</p>
 			<hr />
 			<img className="img-fluid h-auto d-flex justify-content-center rounded-3" src={ifelseimg} alt="If Else" style={{ width: "70%", margin: "0 auto" }} />
