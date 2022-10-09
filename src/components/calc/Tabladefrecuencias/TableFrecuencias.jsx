@@ -98,43 +98,45 @@ const TableFrecuencias = () => {
 			</Box>
 
 			<br />
-			<div className="container-md text-white">
-				<table className="table text-white">
-					<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">Intervalo</th>
-							<th scope="col">Marca de clase</th>
-							<th scope="col">F. absoluta</th>
-							<th scope="col">F. Absoluta Acumulada</th>
-							<th scope="col">F. Relativa</th>
-							<th scope="col">F. Relativa Acumulada</th>
-						</tr>
-					</thead>
-					<tbody>
-						{values.map(e => (
-							<tr key={e.id}>
-								<td>{e.id + 1}</td>
-								<td>{e.minimo} - {e.maximo}</td>
-								<td>{(e.minimo + e.maximo) / 2}</td>
-								<td>{e.veces}</td>
-								<td>{e.veces}</td>
-								<td>{e.veces / tamanio}</td>
-								<td>{e.veces / tamanio}</td>
+			<div className="container-md text-white p-3 dadytable border rounded-3">
+				<div id="tablabug">
+					<table className="table text-white col-sm">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Intervalo</th>
+								<th scope="col">Xi</th>
+								<th scope="col">F. absoluta</th>
+								<th scope="col">F. Absoluta Acumulada</th>
+								<th scope="col">F. Relativa</th>
+								<th scope="col">F. Relativa Acumulada</th>
 							</tr>
-						))
-						}
-						<tr>
-							<td><b>Total</b></td>
-							<td></td>
-							<td></td>
-							<td>{tamanio}</td>
-							<td></td>
-							<td>{1}</td>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
+						</thead>
+						<tbody>
+							{values.map(e => (
+								<tr key={e.id}>
+									<td>{e.id + 1}</td>
+									<td>{e.minimo} - {e.maximo}</td>
+									<td>{(e.minimo + e.maximo) / 2}</td>
+									<td>{e.veces}</td>
+									<td>{e.veces}</td>
+									<td>{e.veces / tamanio}</td>
+									<td>{e.veces / tamanio}</td>
+								</tr>
+							))
+							}
+							<tr>
+								<td><b>Total</b></td>
+								<td></td>
+								<td></td>
+								<td>{tamanio}</td>
+								<td></td>
+								<td>{1}</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 			<hr />
 			<p className="p-3">

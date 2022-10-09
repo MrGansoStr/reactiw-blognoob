@@ -25,3 +25,7 @@
 #paginacion button {
   color: white !important;
 }
+
+#tablabug {
+  overflow: auto;
+}
