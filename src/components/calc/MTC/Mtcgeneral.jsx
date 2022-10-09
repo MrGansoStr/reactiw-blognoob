@@ -12,6 +12,9 @@ const Mtcgeneral = () => {
 	let [modaa, setmodaa] = useState(0)
 
 	const calcall = () => {
+		if(dat.length===0) {
+			return alert("Alert Faltan Datos")
+		}
 		setmedia(calcmedia1(dat))
 		setmediana(calcMediana1(dat))
 		setmodaa(cmoda1(dat))

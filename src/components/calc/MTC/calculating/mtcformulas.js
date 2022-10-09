@@ -2,9 +2,6 @@ function comparar(a, b) { return a - b; }
 function compararob(a, b) { return a.veces - b.veces; }
 
 export const cmoda1 = (dat) => {
-  if (dat.length === 0) {
-    return (alert("Faltan datos"))
-  }
   let newarr = dat.split(' ').map(Number)
   let listaM = newarr.sort(comparar)
 
@@ -28,10 +25,6 @@ export const cmoda1 = (dat) => {
 }
 
 export const calcmedia1 = (dat) => {
-  if (dat.length === 0) {
-    return (alert("Faltan datos"))
-  }
-  
   let newarr = dat.split(' ')
   let sum = 0
 
@@ -43,9 +36,6 @@ export const calcmedia1 = (dat) => {
 }
 
 export const calcMediana1 = (dat) => {
-  if (dat.length === 0) {
-    return (alert("Faltan datos"))
-  }
   let newarr = dat.split(' ').map(Number)
   newarr = newarr.sort(comparar)
 
