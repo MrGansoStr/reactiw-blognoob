@@ -4,15 +4,19 @@ import Textarea from '@mui/joy/Textarea';
 import Box from '@mui/joy/Box';
 import FormLabel from '@mui/joy/FormLabel';
 import { calcMediana1, calcmedia1, cmoda1} from './calculating/mtcformulas'
+import TransitionAlerts from '../alerta/Alerta';
 
 const Mtcgeneral = () => {
 	let [dat, setdat] = useState("")
 	let [media, setmedia] = useState(0)
 	let [mediana, setmediana] = useState(0)
 	let [modaa, setmodaa] = useState(0)
+	let [hayerror, sethayerror] = useState(false)
 
 	const calcall = () => {
+		sethayerror(false)
 		if(dat.length===0) {
+			sethayerror(true)
 			return alert("Alert Faltan Datos")
 		}
 		setmedia(calcmedia1(dat))
@@ -53,6 +57,9 @@ const Mtcgeneral = () => {
 				</Button>
 			</Box>
 			<div className="container-md">
+				<div>
+					{hayerror? <TransitionAlerts thererror={hayerror}/>: <p></p>}
+				</div>
 				<div className="container">
 					Resultado de la Media: {media === 0 ? "Aun no calculado" : media}
 				</div>
