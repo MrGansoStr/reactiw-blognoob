@@ -17,7 +17,7 @@ const Varianza = () => {
   return (
     <div className="container-lg">
 			<br />
-			<h2>Calcular Medidas de Tendencia Central: </h2>
+			<h2>Calcular Varianza: </h2>
 			<Box
 				sx={{
 					py: 2,

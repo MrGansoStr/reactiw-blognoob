@@ -21,3 +21,7 @@
 .listabug li a:hover {
   background-color: rgba(83, 93, 102, 0.384) !important;
 }
+
+#paginacion button {
+  color: white !important;
+}

@@ -34,6 +34,8 @@ const Mtcgeneral = lazy(() => import('./components/calc/MTC/Mtcgeneral'));
 const Varianza = lazy(() => import('./components/calc/Varianza/Varianza'));
 const Verpdf = lazy(() => import('./components/blog/PDF/Verpdf'));
 const Fallback = lazy(() => import('./components/Fallback'))
+const PaginationL = lazy(() => import('./components/Pagination'))
+const TableFrecuencias = lazy(() => import('./components/calc/Tabladefrecuencias/TableFrecuencias'))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -52,9 +54,11 @@ root.render(
           <Route path='/blog/pfds' element={<Verpdf />} />
           <Route path='/blog/ifelse' element={<Sentencesifelse />} />
           <Route path='/blog/bucles' element={<Loops />} />
-          <Route path='/mtc' element={<Mtcgeneral />} />
+					<Route path='/mtc' element={<Mtcgeneral />} />
           <Route path='/varianza' element={<Varianza />} />
+					<Route path='/tablasdefrecuencias' element={<TableFrecuencias/>}/>
         </Routes>
+				<PaginationL/>
         </Suspense>
         <Footgeneral />
       </Router>

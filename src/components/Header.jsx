@@ -37,7 +37,7 @@ const Header = () => {
                   <ul className="dropdown-menu listabug" style={{ backgroundColor: "rgba(43, 49, 54, 0.384)" }}>
                     <li><a className="dropdown-item" href="/mtc">Medidas de Tendencia Central</a></li>
                     <li><a className="dropdown-item" href="/varianza">Varianza</a></li>
-                    <li><a className="dropdown-item disabled" href="/">Varianza</a></li>
+                    <li><a className="dropdown-item" href="/tablasdefrecuencias">Tablas de Frecuencia</a></li>
                   </ul>
                 </li>
                 <li className="nav-item">
