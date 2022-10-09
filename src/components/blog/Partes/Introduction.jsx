@@ -4,7 +4,7 @@ export const Introduction = () => {
 	return (
 		<>
 			<h2 id="introduccion">Introduccion</h2>
-			<div className="">
+			<div className="rounded-1 border p-3">
 				<h3 id="originc">Origen del C++</h3>
 				<p>Fue diseñado a mediados de los años 80 por el danés Bjarne Stroustrup. Si intención fue la de extender el lenguaje de programación C (con mucho éxito en ese momento) para que tuviese los mecanismos necesarios para manipular objetos. Por lo tanto C++ contiene los paradigmas de la programación estructurada y orientada a objetos, por lo que se le conoce como un lenguaje de programación multiparadigma.</p>
 				<hr />

@@ -18,14 +18,14 @@ const Lpageblog = () => {
 						<ContentMain />
 					</div>
 					<div className="col-md-6 border bg-dark rounded">
-						<Navright />
+						<Navright/>
 					</div>
 				</div>
 				<div className="">
 					<br/>
 					<Introduction />
 					<Videotutorials />
-					<p>xdlskafjlksajd lsakdjf lask jdlkf jflkdsaj </p>
+					<p>Parrafo de prueba </p>
 					<Comments/>
 				</div>
 			</div>

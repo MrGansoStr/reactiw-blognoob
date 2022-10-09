@@ -1,9 +1,13 @@
 import functionsimg from './img/functionsimg.png'
 import { Navright } from '../../Navright'
+import ReactPlayer from 'react-player'
 const Functions = () => {
   return (
     <div className="container-xl">
-      <Navright/>
+      <br/>
+      <Navright con={true}/>
+      <br/>
+      <div className="rounded-3 border p-3"> 
       <br/>
       <h2>Funciones</h2>
       <p>Las funciones son un conjunto de instrucciones que realizan una tarea especififica. En genreal toman unos valores de entrada, llamados parametros y proporcionan un valor de salida o valor de retorno; aunque tanto unos como el otro pueden no existir.
@@ -25,6 +29,12 @@ const Functions = () => {
       <hr />
       <img className="img-fluid h-auto d-flex justify-content-center" src={functionsimg} alt="Funciones" style={{ width: "70%", margin: "0 auto" }} />
       <br/>
+      </div>
+      <hr/>
+      <div className="container-xl h-auto">
+      <ReactPlayer url={'https://www.youtube.com/watch?v=vLZymLKd6Mo'}
+      width="100%" controls/>
+    </div>
     </div>
   )
 }

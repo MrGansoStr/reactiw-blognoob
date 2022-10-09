@@ -1,8 +1,8 @@
 import { MdMenu } from "react-icons/md"
-export const Navright = () => {
+export const Navright = (props) => {
   return (
     <>
-      <div className="text-white align-items-center justify-content-center" style={{paddingBottom: "15px", paddingTop: "15px"}}>
+      <div className="text-white align-items-center justify-content-center" style={{paddingBottom: "15px", paddingTop: "15px" , border: `${props.con? "0.5px solid": "0px"}`, borderRadius: `${props.con? "7px": "0px"}`}}>
         <nav className="navbar-expand-md">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style={{ width: "90%", alignItems: "center", fontSize: "22px"}}>
               Temas <MdMenu size={50}/>

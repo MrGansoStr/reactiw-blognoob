@@ -1,11 +1,12 @@
 import ifelseimg from './img/ifelseimg.png'
 import { Navright } from '../../Navright'
-
+import ReactPlayer from 'react-player'
 const Sentencesifelse = () => {
 	return (
 		<div className="container-xl">
 			<br />
-			<Navright />
+			<Navright con={true}/>
+			<div className="rounded-3 border p-3">
 			<br />
 			<h2>Sentencias If Else</h2>
 			<p>Implementa la ejecución condicional de una sentencia.</p>
@@ -20,6 +21,17 @@ const Sentencesifelse = () => {
 			<hr />
 			<img className="img-fluid h-auto d-flex justify-content-center rounded-3" src={ifelseimg} alt="If Else" style={{ width: "70%", margin: "0 auto" }} />
 			<hr />
+			</div>
+			<hr/>
+			<div className="container-xl h-auto">
+      <ReactPlayer url={'https://www.youtube.com/watch?v=r5GbMsB0eOA'}
+      width="100%" controls/>
+    	</div>
+			<hr/>
+			<div className="container-xl h-auto">
+      <ReactPlayer url={'https://www.youtube.com/watch?v=p4kPEtV6WCI'}
+      width="100%" controls/>
+    	</div>
 		</div>
 	)
 }

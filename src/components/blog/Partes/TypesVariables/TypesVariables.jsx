@@ -5,13 +5,14 @@ import boolimg from './img/boolimg.png'
 import doubleimg from './img/doubleimg.png'
 import voidimg from './img/voidimg.png'
 import { Navright } from '../../Navright'
+import ReactPlayer from 'react-player'
 
 const TypesVariables = () => {
   return (
     <div className="container-xl">
       <br/>
-      <Navright/>
-      <div className="">
+      <Navright con={true}/>
+      <div className="rounded-3 border p-3">
         <hr />
         <h2>Tipos de Variables</h2>
         <hr/>
@@ -63,6 +64,11 @@ const TypesVariables = () => {
           Las funciones que no devuelven valores parecen una contradicción. En lenguajes como Pascal, estas funciones se llaman procedimientos. Simplemente hacen su trabajo, y no revuelven valores. Por ejemplo, funciones como borrar la pantalla, no tienen nada que devolver, hacen su trabajo y regresan. Lo mismo se aplica a funciones sin parámetros de entrada, el mismo ejemplo de la función para borrar la pantalla, no requiere ninguna entrada para poder hacer su cometido.
         </p>
         <img className="img-fluid h-auto d-flex justify-content-center" src={voidimg} alt="Variable void" style={{ width: "70%", margin: "0 auto" }} />
+      </div>
+      <hr/>
+      <div className="container-xl h-auto">
+        <ReactPlayer url={'https://www.youtube.com/watch?v=xBOpQN8jR54'}
+      width="100%" controls/>
       </div>
     </div>
   )
