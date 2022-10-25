@@ -41,7 +41,6 @@ const Header = () => {
   let [word, setword] = useState("")
   cargar()
   useEffect(() => {
-    console.log("Intento no se que")
   }, [word])
   return (
     <>

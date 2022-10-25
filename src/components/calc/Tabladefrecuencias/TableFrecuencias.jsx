@@ -5,15 +5,17 @@ import Box from '@mui/joy/Box';
 import FormLabel from '@mui/joy/FormLabel';
 
 const TableFrecuencias = () => {
-	useEffect((e) => {
-		console.log(e)
-	}, [])
 	let [dat, setdat] = useState("")
 	let [values, setvalues] = useState([])
 	let [tamanio, settamanio] = useState(0)
+	let [sumafrelativa, setsumafrelativa] = useState(0)
+	let [bandmsg, setbandmsg] = useState(false)
+	useEffect((e) => {
+		console.log(e)
+	}, [])
 
 	const calctable = () => {
-
+		setbandmsg(!bandmsg)
 		let newarr = dat.split(' ').map(Number)
 		let max = Math.max(...newarr)
 		let min = Math.min(...newarr)
@@ -21,6 +23,7 @@ const TableFrecuencias = () => {
 		let intervalos = parseInt(Math.sqrt(newarr.length))
 		let amplitud = parseInt(rango / intervalos)
 		settamanio(newarr.length)
+
 		async function llenarintervalos() {
 			let arrintervalos = []
 			for (let i = 0; i < intervalos; i++) {
@@ -28,7 +31,9 @@ const TableFrecuencias = () => {
 					id: i,
 					minimo: min,
 					maximo: min + amplitud,
-					veces: 0
+					veces: 0,
+					acumuladoAbosulta: 0,
+					acumuladoRelativa: 0,
 				}
 				min = amplitud + min
 				arrintervalos.push(obj)
@@ -37,9 +42,11 @@ const TableFrecuencias = () => {
 			return arrintervalos
 		}
 		async function llenarveces(arrveces, arrg) {
-
+			let suma1 = 0
+			let suma2 = 0
 			for (let i = 0; i < arrveces.length; i++) {
 				let contador = 0
+
 				for (let j = 0; j < arrg.length; j++) {
 					if ((i === arrveces.length - 1)) {
 						if (arrg[j] >= arrveces[i].minimo && arrg[j] <= arrveces[i].maximo) {
@@ -55,10 +62,19 @@ const TableFrecuencias = () => {
 					}
 				}
 				arrveces[i].veces = contador
+				suma2 += arrveces[i].veces/tamanio
+				arrveces[i].acumuladoRelativa = suma2
 			}
-			console.log(arrveces)
+			setsumafrelativa(suma2)
+			
+			for(let i = 0; i < arrveces.length; i++) {
+				suma1 += arrveces[i].veces
+				arrveces[i].acumuladoAbosulta = suma1
+			}
+			//setsumafrelativa(suma2)
 			setvalues(arrveces)
 		}
+
 		llenarintervalos().then(e => {
 			llenarveces(e, newarr)
 		})
@@ -98,6 +114,9 @@ const TableFrecuencias = () => {
 			</Box>
 
 			<br />
+			<div className="container-sm text-danger p-2">
+				<h4>{!bandmsg ? "": "One click more"}</h4>
+			</div>
 			<div className="container-md text-white p-3 dadytable border rounded-3">
 				<div id="tablabug">
 					<table className="table text-white col-sm">
@@ -113,15 +132,15 @@ const TableFrecuencias = () => {
 							</tr>
 						</thead>
 						<tbody>
-							{values.map(e => (
+							{values.map((e)=> (
 								<tr key={e.id}>
 									<td>{e.id + 1}</td>
 									<td>{e.minimo} - {e.maximo}</td>
 									<td>{(e.minimo + e.maximo) / 2}</td>
 									<td>{e.veces}</td>
-									<td>{e.veces}</td>
+									<td>{e.acumuladoAbosulta}</td>
 									<td>{e.veces / tamanio}</td>
-									<td>{e.veces / tamanio}</td>
+									<td>{e.acumuladoRelativa}</td>
 								</tr>
 							))
 							}
@@ -131,7 +150,7 @@ const TableFrecuencias = () => {
 								<td></td>
 								<td>{tamanio}</td>
 								<td></td>
-								<td>{1}</td>
+								<td>{sumafrelativa}</td>
 								<td></td>
 							</tr>
 						</tbody>

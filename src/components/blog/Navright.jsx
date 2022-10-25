@@ -35,6 +35,7 @@ export const Navright = (props) => {
               <ul className="text-left" style={{ listStyle: "none", padding: "15px" }}>
                 <h2>PDFs</h2>
                 <hr/>
+                <a className="list-group-item" href="./PDF/03_Proyecto_web.pdf">PAsda</a>
                 <a className="list-group-item"  href="/blog/pdfs">Proyecto</a>
               </ul>
               <hr />
