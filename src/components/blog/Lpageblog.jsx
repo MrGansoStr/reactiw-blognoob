@@ -14,7 +14,7 @@ const Lpageblog = () => {
 				<Mainimg />
 				<br/>
 				<div className="row" style={{ Width: "100%" }}>
-					<div className="col-md-6  border text-bg-primary rounded">
+					<div className="col-md-6 bg-dark border rounded">
 						<ContentMain />
 					</div>
 					<div className="col-md-6 border bg-dark rounded">

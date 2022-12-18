@@ -22,9 +22,9 @@ const titl1 = [
   }
 ]*/
 let titulos = []
-function cargar () {
+function cargar() {
   let titles = document.getElementsByClassName("titulo")
-	//console.log(titles)
+  //console.log(titles)
   Array.from(titles).forEach(function (element) {
     let obj = {
       tit: element.textContent,
@@ -32,7 +32,7 @@ function cargar () {
     }
     titulos.push(obj)
     //console.log(obj)
-    obj={}
+    obj = {}
   })
   titulos.splice(titles.length, titles.length)
 }
@@ -86,24 +86,23 @@ const Header = () => {
                 </li>
               </ul>
               <form className="d-flex" role="search">
-                <li className="dropdown" style={{listStyle: "none"}}>
-                <input className="form-control me-2 dropdown dropdown-toggle "data-bs-toggle="dropdown" type="search" placeholder="Estadistica" aria-label="Search" onChange={e => setword(e.target.value.toLowerCase())}/>
-                <ul className="dropdown-menu justify-content-center align-items-center listabug" style={{margin: "0 auto", backgroundColor: "rgba(43, 49, 54, 0.384)"}}>
-                  {titulos.filter((val) => {
-                    if(word === ""){
-                      return val.tit
-                    }
-                    if((val.tit.toLowerCase()).includes(word)){
-                      return val.tit
-                    }
-                    return 0
-                  }).map((e, key) => (
-                    <li key={key} ><a href={`#${e.ref}`} className="dropdown-item">{e.tit}</a></li>
-                  ))}
-                  <li className="dropdown-item"><b>C++</b></li>
-                </ul>
+                <li className="dropdown" style={{ listStyle: "none" }}>
+                  <input className=" form-control me-2 dropdown dropdown-toggle " data-bs-toggle="dropdown" type="search" placeholder="Punteros" aria-label="Search" onChange={e => setword(e.target.value.toLowerCase())} />
+                  <ul className="dropdown-menu justify-content-center align-items-center listabug" style={{ margin: "0 auto", backgroundColor: "rgba(43, 49, 54, 0.384)" }}>
+                    {titulos.filter((val) => {
+                      if (word === "") {
+                        return val.tit
+                      }
+                      if ((val.tit.toLowerCase()).includes(word)) {
+                        return val.tit
+                      }
+                      return 0
+                    }).map((e, key) => (
+                      <li key={key} ><a href={`#${e.ref}`} className="dropdown-item">{e.tit}</a></li>
+                    ))}
+                    <li className="dropdown-item text-white"><b>C++</b></li>
+                  </ul>
                 </li>
-                <button className="btn btn-outline-primary col-5 text-white" type="submit">Buscar Tema</button>
               </form>
             </div>
           </div>
